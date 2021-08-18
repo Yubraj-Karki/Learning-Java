@@ -50,17 +50,30 @@
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // IF ELSE INSIDE METHODS
+// public class Main {
+// static void verifyAuthority(String name, int age) {
+// if (age > 18)
+// System.out.println("Hi, " + name + ", you have this right");
+// else
+// System.out.println("Hi, " + name + ", you don't have a right for this.");
+
+// }
+
+// public static void main(String[] args) {
+// verifyAuthority("John", 17);
+// verifyAuthority("Anna", 20);
+// }
+// }
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// JAVA SCOPE
 public class Main {
-    static void verifyAuthority(String name, int age) {
-        if (age > 18)
-            System.out.println("Hi, " + name + ", you have this right");
-        else
-            System.out.println("Hi, " + name + ", you don't have a right for this.");
-
-    }
-
     public static void main(String[] args) {
-        verifyAuthority("John", 17);
-        verifyAuthority("Anna", 20);
+        // X cannot be accessed here
+        int x = 10;
+
+        System.out.println(x);
     }
 }
