@@ -69,11 +69,45 @@
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // JAVA SCOPE
-public class Main {
-    public static void main(String[] args) {
-        // X cannot be accessed here
-        int x = 10;
+// public class Main {
+// public static void main(String[] args) {
+// // X cannot be accessed here
+// int x = 10;
 
-        System.out.println(x);
+// System.out.println(x);
+// }
+// }
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// JAVA RECURSION
+// public class Main {
+// public static void main(String[] args) {
+// int result = sum(10);
+// System.out.println(result);
+
+// }
+
+// public static int sum(int k) {
+// if (k > 0) {
+// return k + sum(k - 1);
+// } else {
+// return 0;
+// }
+// }
+// }
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Creating class and it's objects
+class Main {
+    int x = 5;
+
+    public static void main(String[] args) {
+        Main myObj = new Main();
+
+        System.out.println(myObj.x);
     }
 }
