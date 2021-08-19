@@ -102,12 +102,41 @@
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Creating class and it's objects
-class Main {
-    int x = 5;
+// class Main {
+// int x = 20;
+
+// public static void main(String[] args) {
+// Main myObj = new Main();
+
+// System.out.println(myObj.x);
+// }
+// }
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Creating static and public methods
+public class Main {
+
+    // Static method
+    static void sayMyName(String name) {
+        System.out.println("You are " + name);
+    }
+
+    // Public method
+    public void sayHisName(String name) {
+        System.out.println("He is " + name);
+    }
 
     public static void main(String[] args) {
-        Main myObj = new Main();
 
-        System.out.println(myObj.x);
+        // Static method can be accessed without creating an object of the class
+        sayMyName("Heisenberg");
+
+        // Public method cannot be accessed without creating an object of the class Main
+
+        Main myObj = new Main(); // Create and obj of Main
+
+        myObj.sayHisName("Jessie Pinkman"); // Call the public method on the object
     }
 }
