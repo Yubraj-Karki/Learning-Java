@@ -151,13 +151,13 @@ public class Main {
     int x;
 
     // Class constructor for the main class
-    public Main() {
-        x = 10;
+    public Main(int y) {
+        x = y;
     }
 
     public static void main(String[] args) {
         // Creating an object of the class main, which calls the constructor
-        Main myObj = new Main();
+        Main myObj = new Main(20);
         System.out.println(myObj.x);
 
     }
