@@ -118,27 +118,28 @@
 // Creating static and public methods
 // public class Main {
 
-//     // Static method
-//     static void sayMyName(String name) {
-//         System.out.println("You are " + name);
-//     }
+// // Static method
+// static void sayMyName(String name) {
+// System.out.println("You are " + name);
+// }
 
-//     // Public method
-//     public void sayHisName(String name) {
-//         System.out.println("He is " + name);
-//     }
+// // Public method
+// public void sayHisName(String name) {
+// System.out.println("He is " + name);
+// }
 
-//     public static void main(String[] args) {
+// public static void main(String[] args) {
 
-//         // Static method can be accessed without creating an object of the class
-//         sayMyName("Heisenberg");
+// // Static method can be accessed without creating an object of the class
+// sayMyName("Heisenberg");
 
-//         // Public method cannot be accessed without creating an object of the class Main
+// // Public method cannot be accessed without creating an object of the class
+// Main
 
-//         Main myObj = new Main(); // Create and obj of Main
+// Main myObj = new Main(); // Create and obj of Main
 
-//         myObj.sayHisName("Jessie Pinkman"); // Call the public method on the object
-//     }
+// myObj.sayHisName("Jessie Pinkman"); // Call the public method on the object
+// }
 // }
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -146,19 +147,34 @@
 
 // JAVA Constructors
 
-// Create a main class
-public class Main {
-    int x;
+// // Create a main class
+// public class Main {
+// int x;
 
-    // Class constructor for the main class
-    public Main(int y) {
-        x = y;
-    }
+// // Class constructor for the main class
+// public Main(int y) {
+// x = y;
+// }
+
+// public static void main(String[] args) {
+// // Creating an object of the class main, which calls the constructor
+// Main myObj = new Main(20);
+// System.out.println(myObj.x);
+
+// }
+// }
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// JAVA ENCAPSULATION 
+public class Main {
 
     public static void main(String[] args) {
-        // Creating an object of the class main, which calls the constructor
-        Main myObj = new Main(20);
-        System.out.println(myObj.x);
+        Person myObj = new Person();
+        myObj.setName("John");
+        myObj.setAge(30);
 
+        System.out.println("Hi, this is " + myObj.getName() + " and he is " + myObj.getAge() + " year old.");
     }
 }
